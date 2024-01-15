@@ -6,6 +6,11 @@
   margin: 0rem;
 }
 
+.hidden,
+.hamburger {
+  display: none;
+}
+
 .primary-text-color {
   color: #ff5400;
 }
@@ -132,7 +137,7 @@ nav ul li {
   color: rgba(19, 19, 24, 0.5);
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
+  padding-left: 6px;
 }
 
 /* Main Styles */
@@ -145,7 +150,6 @@ main {
   display: grid;
   grid-template: 1fr / repeat(2, 1fr);
   gap: 4rem;
-  height: 550px;
   margin-bottom: 2rem;
 }
 .popular-description h3 {
@@ -159,8 +163,6 @@ main {
 .newsletter-container {
   display: grid;
   grid-template-columns: 0.75fr auto;
-  height: 422px;
-
   margin-bottom: 2rem;
   gap: 2rem;
 }
@@ -223,7 +225,6 @@ main {
 .newsletter-promo-description {
   color: #fff;
   text-align: center;
-  font-family: Mulish;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -232,7 +233,6 @@ main {
 
 .newsletter-promo-discount {
   color: #fff;
-  font-family: Mulish;
   font-size: 32px;
   font-style: normal;
   font-weight: 800;
@@ -290,4 +290,97 @@ hr {
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
   margin: 0 auto 50px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto 2rem;
+  }
+
+  nav > ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    height: 50px;
+  }
+  /* Banner Content */
+  .banner-container {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 22px;
+  }
+  .banner-search {
+    flex-direction: column;
+  }
+  .banner-description {
+    font-size: 14px;
+  }
+  /* Popular Content */
+  .popular-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .popular-description {
+    width: 375px;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .popular-description p {
+    width: 335px;
+  }
+  .popular-description h3 {
+    font-size: 20px;
+  }
+  .popular-description ul li {
+    font-size: 14px;
+    width: 335px;
+  }
+  .popular-img {
+    width: 335px;
+    height: 342px;
+  }
+  /* Newsletter Container */
+  .newsletter-container {
+    grid-template: 2fr /1fr;
+    margin-left: 1.5rem;
+  }
+  .newsletter-description {
+    width: 375px;
+  }
+  .newsletter-image {
+    width: 440px;
+    height: 400px;
+    position: relative;
+  }
+  .newsletter-promo {
+    width: 214.023px;
+    height: 79.268px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 18rem;
+    right: 1rem;
+  }
+  .newsletter-promo-description {
+    font-size: 15.854px;
+  }
+  .newsletter-promo-discount {
+    font-size: 21.138px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  hr {
+    width: 335px;
+  }
 }
