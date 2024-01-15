@@ -24,6 +24,12 @@
   margin-bottom: 1.5rem;
 }
 
+.medium-section-text {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
 .btn-primary {
   border-style: none;
   background: #ff5400;
@@ -140,12 +146,97 @@ main {
   grid-template: 1fr / repeat(2, 1fr);
   gap: 4rem;
   height: 550px;
+  margin-bottom: 2rem;
 }
 .popular-description h3 {
   margin-bottom: 1.5rem;
 }
 .popular-description ul li {
   margin-bottom: 1.4rem;
+}
+
+/* Newsletter Container */
+.newsletter-container {
+  display: grid;
+  grid-template-columns: 0.75fr auto;
+  height: 422px;
+
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.newsletter-description {
+  width: 400px;
+  height: 360px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+.newsletter-description p {
+  margin: 2rem 0 2rem 0;
+}
+.newsletter-description input::placeholder {
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.newsletter-description input {
+  background: rgba(19, 19, 24, 0.05);
+  border-style: none;
+}
+
+.newsletter-info {
+  border-radius: 8px;
+  width: 100%;
+  height: 52px;
+  margin-bottom: 1rem;
+}
+
+.newsletter-image {
+  width: 672px;
+  height: 422px;
+  border-radius: 16px;
+  background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.newsletter-promo {
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background: #ff5400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3rem;
+  right: 0.5rem;
+}
+
+.newsletter-promo-description {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.newsletter-promo-discount {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 
 /* Footer Styles */
