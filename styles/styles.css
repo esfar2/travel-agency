@@ -21,6 +21,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary {
@@ -89,6 +90,7 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .banner-title {
@@ -118,7 +120,7 @@ nav ul li {
 .input-size {
   width: 174px;
   height: 50px;
-  padding: 1px;
+
 }
 
 .banner-search input::placeholder {
@@ -126,4 +128,22 @@ nav ul li {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+}
+
+/* Main Styles */
+main {
+  width: 74rem;
+  margin: 0 auto;
+}
+
+.popular-container {
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+  gap: 4rem;
+}
+.popular-description h3 {
+  margin-bottom: 1.5rem;
+}
+.popular-description ul li {
+  margin-bottom: 1.4rem;
 }
