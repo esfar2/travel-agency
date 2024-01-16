@@ -413,7 +413,8 @@ hr {
   }
   /* Banner Content */
   .banner-container {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .banner-title {
     font-size: 22px;
