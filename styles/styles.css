@@ -474,8 +474,10 @@ hr {
   }
 
   .col-image img {
-    width: 80%;
-    height: 100%;
+    /* width: 80%;
+    height: 100%; */
+    width: 335px;
+    height: 176px;
   }
 
   /* Choose Us Container */
@@ -487,8 +489,11 @@ hr {
   }
 
   .choose-us-description {
-    text-align: center;
-    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   .choose-us-description h3 {
