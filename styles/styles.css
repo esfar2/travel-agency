@@ -152,6 +152,12 @@ main {
   gap: 4rem;
   margin-bottom: 2rem;
 }
+.popular-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .popular-description h3 {
   margin-bottom: 1.5rem;
 }
